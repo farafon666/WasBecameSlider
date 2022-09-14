@@ -1,0 +1,54 @@
+/* Общие настройки для всего контейнера */
+.sl-container {
+  border: 3px solid #bfe2ff;
+  margin: 5px auto;
+  overflow: hidden;
+  position: relative;
+  width: min(90vh, 90vw);
+  height: min(90vh, 90vw);
+  box-sizing: border-box;
+}
+
+/* Настройки блоков с картинками */
+.sl-container .view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/* Настройки картинок в блоке .view */
+.sl-container .view img {
+ width: min(90vh, 90vw);
+}
+
+/* Настройки картинки слева */
+.sl-container .view-after {
+  width: min(45vh, 45vw);
+  z-index: 200;
+}
+
+/* Настройки слайдера */
+.sl-container .dragme {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0px;
+  left: min(45vh, 45vw);
+  background-color: #bfe2ff;
+  cursor: pointer;
+  z-index: 300;
+}
+
+/* Круг на слайдере */
+.sl-container .dr-circle {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: -15px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-color: #bfe2ff;
+  cursor: pointer;
+  z-index: 300;
+}

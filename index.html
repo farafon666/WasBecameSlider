@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Подключаем стили -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Подключаем jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script> 
+  <!-- Подключаем библиотеку стандартных реакций jQuery -->
+  <script src="draggable-jquery-ui-min.js"> </script> 
+  <title>Slider 'Was-Became'</title>
+</head>
+<body>
+  <!-- Общий контейнер для слайдера -->
+  <div class="sl-container">
+    <!-- Картинка слева -->
+    <div class="view view-after">
+      <img src="src/webb.jpg"/>
+    </div>
+    <!-- Картинка справа -->
+    <div class="view view-before">
+      <img src="src/hubble.jpg"/>
+    </div>
+    <!-- Слайдер посередине -->
+    <div class="dragme">
+      <!-- Круг на слайдере -->
+      <div class="dr-circle"></div>
+    </div>
+  </div>
+  <!-- Подключаем наш скрипт -->
+  <script src="script.js"></script>
+</body>
+</html>
